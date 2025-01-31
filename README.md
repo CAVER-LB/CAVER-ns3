@@ -1,7 +1,6 @@
 ## Run NS-3 on Ubuntu 20.04
 
-This is an NS-3 simulator for "CAVER: Enhancing RDMA Load Balancing by Hunting
-Less-Congested Paths". We add CAVER's components to  [ConWeave(SIGCOMM'2023)'s NS-3 simulator](https://github.com/conweave-project/conweave-ns3) to simulate RDMA load balancing performance with various algorithms.
+This is an NS-3 simulator for "CAVER: Enhancing RDMA Load Balancing by Hunting Less-Congested Paths". We add CAVER's components to  [ConWeave(SIGCOMM'2023)'s NS-3 simulator](https://github.com/conweave-project/conweave-ns3) to simulate RDMA load balancing performance with various algorithms.
 
 We describe how to run this repository using your local machine with `ubuntu:20.04`.
 
