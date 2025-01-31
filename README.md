@@ -6,7 +6,7 @@ We describe how to run this repository using your local machine with `ubuntu:20.
 
 #### 0. Prerequisites
 
-We tested the simulator on Ubuntu 20.04, but latest versions of Ubuntu should also work.
+We tested the simulator on Ubuntu 20.04, but latest versions of Ubuntu should also work. Firstly, use the following command to install the required dependencies
 
 ```
 sudo apt install build-essential python3 libgtk-3-0 bzip2
@@ -19,7 +19,7 @@ python3 -m pip install numpy matplotlib cycler pandas
 ```
 
 #### 1. Configure & Build
-First, you do all these
+Run following commands to configure and build simulation:
 ```
 wget https://www.nsnam.org/releases/ns-allinone-3.19.tar.bz2
 tar -xvf ns-allinone-3.19.tar.bz2
