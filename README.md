@@ -6,10 +6,12 @@ We describe how to run this repository using your local machine with `ubuntu:20.
 
 #### 0. Prerequisites
 
-We tested the simulator on Ubuntu 20.04, but latest versions of Ubuntu should also work. Firstly, use the following command to install the required dependencies
+We tested the simulator on Ubuntu 20.04, but latest versions of Ubuntu should also work. 
+
+Firstly, use the following command to install the required dependencies
 
 ```
-sudo apt install build-essential python3 libgtk-3-0 bzip2
+sudo apt install build-essential python3 libgtk-3-0 bzip2 python2
 ```
 
 For plotting, we use `numpy`, `matplotlib`, `pandas` and `cycler` for python3:
@@ -42,7 +44,7 @@ To run the simulation, use the following command:
 For example:
 
 ```
-./autorun fat_k8_100G_OS2 60
+./autorun.sh fat_k8_100G_OS2 60
 ```
 
 All topology files are stored in the ./config directory, along with various traffic workloads that were used to reproduce the results from our paper. We will explain these workloads in more detail later.
@@ -50,7 +52,7 @@ All topology files are stored in the ./config directory, along with various traf
 Each experiment will be assigned a unique ID. The results will be stored in the ./mix/output/ directory and logged in `./mix/autorun_history.txt`. For example, after running:
 
 ```
-./autorun fat_k8_100G_OS2 60
+./autorun.sh fat_k8_100G_OS2 60
 ```
 
 the `./mix/autorun_history.txt` file will include an entry like:
