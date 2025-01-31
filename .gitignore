@@ -19,4 +19,4 @@ mix/index.txt
 mix/.history
 mix/autorun_history.txt
 *.docx
-mix
+mix/*
