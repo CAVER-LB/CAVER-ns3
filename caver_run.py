@@ -206,7 +206,7 @@ def run_caver_patchoiceTimeout_experiments():
 
 def run_caver_dreTime_alpha_experiments():
     topo = 'fat_k8_100G_OS2'
-    loads = [60, 80]
+    loads = [40, 60]
     runtime = 0.02
     processes = []
     record = defaultdict(dict)  # Record for load -> parameter combination -> id
