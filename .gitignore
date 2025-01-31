@@ -12,11 +12,7 @@ analysis/figures/*.pdf
 **/*.pyc
 .vscode
 __pycache__
-mix/.history
 *.png
 *.pdf
-mix/index.txt
-mix/.history
-mix/autorun_history.txt
 *.docx
-mix/*
+
