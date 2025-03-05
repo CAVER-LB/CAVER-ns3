@@ -137,8 +137,6 @@ if __name__ == "__main__":
 	bandwidth = translate_bandwidth(options.bandwidth)
 	time = float(options.time)*1e9 # translates to ns
 	output = options.output
-	mix = float(options.mix) #all-to-all所占的比例
-	podsize = int(options.podsize)
 	if bandwidth == None:
 		print("bandwidth format incorrect")
 		sys.exit(0)
@@ -164,7 +162,7 @@ if __name__ == "__main__":
 	avg = customRand.getAvg()
 	flows = []
     # 首先，生成random流量
-	avg_inter_arrival = 1/(bandwidth*load*(1-mix)/8./avg)*1000000000 
+	avg_inter_arrival = 1/(bandwidth*load/8./avg)*1000000000 
 	#n_flow_estimate = int(time / avg_inter_arrival * nhost)
 	#n_flow = 0
 	host_list = [(base_t + int(poisson(avg_inter_arrival)), i) for i in range(nhost)]# (时间，hostid)
